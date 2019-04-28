@@ -77,7 +77,7 @@ class App extends Component {
                       <div className="form-group">
                         <div className="col-md-8 inputGroupContainer" style={{float: 'right'}}>
                           <div className="input-group"></div>
-                          <input onClick={this.onSubmitFormHandler}  type="submit" className="btnRegister" value="Register" />
+                          <input onClick={this.onSubmitFormHandler}  type="submit" className="btn btn-sm btn-primary" value="Submit" />
                         </div>
                       </div>
                     </fieldset>
