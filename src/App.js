@@ -59,8 +59,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h4>Create DynamicForm in React</h4>
         <div className="container">
+        <h4 style={{textAlign: 'center'}}>Create DynamicForm in React</h4>
           <table className="table table-striped">
             <tbody>
               <tr>
@@ -75,7 +75,7 @@ class App extends Component {
                         onIntegerHandler={this.onIntegerHandler}
                       />
                       <div className="form-group">
-                        <div className="col-md-8 inputGroupContainer">
+                        <div className="col-md-8 inputGroupContainer" style={{float: 'right'}}>
                           <div className="input-group"></div>
                           <input onClick={this.onSubmitFormHandler}  type="submit" className="btnRegister" value="Register" />
                         </div>
