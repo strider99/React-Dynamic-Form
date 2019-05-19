@@ -28,7 +28,7 @@ class App extends Component {
     });
     this.setState({ fieldsObject: fieldsObjects});
   }
-  onSlectekHandler = async (fieldName,event) => {
+  onSelectHandler = async (fieldName,event) => {
     this.setState({ [fieldName]: event.target.value });
   }
   onChangeHandler = (event, fieldName) => {
@@ -68,7 +68,7 @@ class App extends Component {
                   <form className="well form-horizontal" >
                     <fieldset>
                       <CreateDynamicForm {...this.state}
-                        onSlectekHandler={this.onSlectekHandler}
+                        onSelectHandler={this.onSelectHandler}
                         onChangeHandler={this.onChangeHandler}
                         onDatePickerHandler={this.onDatePickerHandler}
                         onCheckboxHandler={this.onCheckboxHandler}

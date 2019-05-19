@@ -12,8 +12,8 @@ const expenseCreateForm = props => {
                     <label className="col-md-4 control-label">{form.labelName}</label>
                     <div className="col-md-8 inputGroupContainer">
                         <div className="input-group" style={{ width: '40%'}}>
-                          <select 
-                          onChange={(e)=>props.onSlectekHandler(form.fieldName,e)}
+                          <select
+                          onChange={(e)=>props.onSelectHandler(form.fieldName,e)}
                           value={props[form.fieldName] ? props[form.fieldName] : ""}
                            className="selectpicker form-control">
                            <option >Select {form.labelName}</option>
@@ -24,7 +24,7 @@ const expenseCreateForm = props => {
                         </div>
                     </div>
                   </div>
-        );  
+        );
       case "text":
         return (
           <div key={form.id} className="form-group">
@@ -51,7 +51,7 @@ const expenseCreateForm = props => {
              <div className="input-group" style={{ width: '40%'}}>
               <DayPickerInput
                 formatDate={formatDate}
-                dayPickerProps={{ disabledDays: {after: new Date()} }} 
+                dayPickerProps={{ disabledDays: {after: new Date()} }}
                 selectedDays={
                   props[form.fieldName] ? props[form.fieldName] : new Date()
                 }
@@ -131,10 +131,10 @@ const expenseCreateForm = props => {
           </div>
         </div>
         );
-        default: 
+        default:
           return '';
-        
-      }  
+
+      }
   });
 }
 
